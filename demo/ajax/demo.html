@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="format-detection" content="telephone=no"/>
+ <meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no" />
+ <title>Ajax扩展封装测试</title>
+ <script src="../../lib/jquery-3.0.0.min.js"></script>
+ <script src="../../lib//jquery.ajax-extend.min.js"></script>
+ <script src="demo.min.js"></script>
+</head>
+<body>
+<div>
+ <p>
+   <span style="font-weight:bold;">重试测试</span><br/>
+   1. 改变请求url试试是否会进行3次重试 <br/>
+   2. 改变 json.txt中的code值试试，是否会进行3次重试 <br/>
+   3. 将重试间隔设置大一些，在重试时将 json.txt的code值改为1000试试 <br/>
+ </p>
+ <p>请求URL：<input id="reqUrl" value="json.js" /></p>
+ <p><a id="btnReq" href="javascript:void(0);">发起请求</a></p>
+ <p id="resResult"></p>
+</div>
+
+</body>
+
+</html>
